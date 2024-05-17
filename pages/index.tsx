@@ -36,8 +36,8 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://t.me/znfeau" rel="noopener noreferrer" target="_blank">
-          Made with ❤️ by @dumbled00r
+        <a href="https://t.me/mrsaidia" rel="noopener noreferrer" target="_blank">
+           Saidia
         </a>
       </footer>
       

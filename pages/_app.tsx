@@ -11,6 +11,7 @@ import {
   kroma,
   scroll,
   sepolia,
+  merlin,
   optimism
 } from 'wagmi/chains';
 import { darkTheme, getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
@@ -31,6 +32,10 @@ const config = getDefaultConfig({
     {...scroll,
       iconBackground: '#FFD700',
       iconUrl:"https://pbs.twimg.com/profile_images/1696531511519150080/Fq5O0LeN_400x400.jpg"
+    },
+    {...merlin,
+      iconBackground: '#FFD700',
+      iconUrl:"https://scan.merlinchain.io/svgs/logo/merlin.png"
     },
     mainnet,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
