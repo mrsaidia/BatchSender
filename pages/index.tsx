@@ -9,9 +9,9 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Welcome to my Dapp</title>
+        <title>Disperse</title>
         <meta
-          content="Created by @znfeau"
+          content="Saidia - copyright @znfeau"
           name="description"
         />
         <link href="/favicon.ico" rel="icon" />
