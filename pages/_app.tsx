@@ -12,7 +12,8 @@ import {
   scroll,
   sepolia,
   merlin,
-  optimism
+  optimism,
+  linea
 } from 'wagmi/chains';
 import { darkTheme, getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { ErrorBoundary } from 'next/dist/client/components/error-boundary';
@@ -37,6 +38,7 @@ const config = getDefaultConfig({
       iconBackground: '#FFD700',
       iconUrl:"https://scan.merlinchain.io/svgs/logo/merlin.png"
     },
+    linea,
     mainnet,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
