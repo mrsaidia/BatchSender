@@ -8,7 +8,6 @@ import {
   mainnet,
   ancient8,
   base,
-  kroma,
   scroll,
   sepolia,
   merlin,
@@ -18,11 +17,10 @@ import {
 
 
 
+import {  getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
-import { darkTheme, getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
 
-import { ErrorBoundary } from 'next/dist/client/components/error-boundary';
 
 const config = getDefaultConfig({
   appName: 'RainbowKit App',
@@ -57,7 +55,7 @@ const config = getDefaultConfig({
 
 const client = new QueryClient();
 
-function MyApp({ Component, pageProps, router }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider  config={config}>
       <QueryClientProvider client={client}>
