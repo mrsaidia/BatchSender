@@ -1,10 +1,8 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import { BaseError, useAccount, useChainId, useWaitForTransactionReceipt, useWriteContract } from 'wagmi';
 import {ethers} from 'ethers';
-import { SUPPORT_CHAIN_IDS } from '../utils/enums';
 import { DISPERSE_ADDRESS } from '../utils/constant';
 import DisperseABI from '../utils/abi/Disperse.json';
-import ERC20 from '../utils/abi/ERC20.json';
 import styles from '../styles/SendSection.module.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
