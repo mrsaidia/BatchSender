@@ -8,5 +8,6 @@ export enum SUPPORT_CHAIN_IDS {
     ANCIENT8 = 888888888, // Ancient8 mainnet
     MERLIN = 4200, // Merlin Mainnet
     LINEA = 59144,// Linea Mainnet
+    MONAD = 10143,//Monad Testnet
   }
   

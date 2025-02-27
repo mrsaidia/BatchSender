@@ -12,9 +12,16 @@ import {
   scroll,
   sepolia,
   merlin,
-  optimism
+  optimism,
+  monadTestnet
 } from 'wagmi/chains';
+
+
+
+
 import { darkTheme, getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+
 import { ErrorBoundary } from 'next/dist/client/components/error-boundary';
 
 const config = getDefaultConfig({
@@ -36,6 +43,11 @@ const config = getDefaultConfig({
     {...merlin,
       iconBackground: '#FFD700',
       iconUrl:"https://scan.merlinchain.io/svgs/logo/merlin.png"
+    },
+    {...monadTestnet,
+      iconBackground: '#FFD700',
+      iconUrl:"https://pbs.twimg.com/profile_images/1877532281419739137/I_t8rg_V_400x400.jpg"
+
     },
     mainnet,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
